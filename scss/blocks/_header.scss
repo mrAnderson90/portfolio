@@ -1,0 +1,23 @@
+.header {
+	padding: 40px 0;
+
+	@include mobile {
+		padding: 30px 0;
+	}
+}
+
+.header__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px 30px;
+
+	@include mobile {
+		flex-wrap: wrap;
+	}
+}
+
+.header__logo {
+	flex-shrink: 0;
+}
+

@@ -1,0 +1,29 @@
+.badge {
+	padding: 3px 6px;
+	height: 19px;
+
+	border-radius: 2px;
+	background-color: #414141;
+
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 1;
+	color: #fff;
+
+	&--html {
+		background-color: #414141;
+	}
+
+	&--css {
+		background-color: #39a0ff;
+	}
+
+	&--scss {
+		background-color: #dd6adf;
+	}
+
+	&--js {
+		background-color: #ffce20;
+		color: #000;
+	}
+}

@@ -1,0 +1,74 @@
+.project {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.project__img {
+	margin-bottom: 15px;
+
+	height: 210px;
+	background-color: #f6f6f6;
+	background-image: url('./../img/projects/laptop.svg');
+	background-position: center center;
+	background-size: auto;
+	background-repeat: no-repeat;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		margin-top: -7px;
+		width: 216px;
+		height: 138px;
+		object-fit: cover;
+	}
+}
+
+.project__title {
+	margin-bottom: 5px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.3;
+
+	a {
+		color: #000;
+		text-decoration: none;
+		transition: all 0.2s ease-in;
+
+		&:after {
+			content: "";
+
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			background-color:rgba(86, 86, 86, 0);
+
+			transition: all 0.2s ease-in;
+		}
+
+		&:hover {
+			color: #039be5;
+
+			&:after {
+				box-shadow: 5px 5px 5px 0px rgba(34, 60, 80, 0.2);
+			}
+		}
+	}
+}
+
+.project__desc {
+	margin-bottom: 5px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #000;
+}
+
+.project__tags {
+	margin-top: auto;
+}

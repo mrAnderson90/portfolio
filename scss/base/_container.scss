@@ -1,0 +1,25 @@
+.container {
+	width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+
+	@include tablet {
+		width: 768px;
+	}
+
+	@include mobile {
+		width: 100%;
+	}
+
+	&--tablet-fluid {
+		@include tablet {
+			width: auto;
+		}
+	}
+
+	&--mobile-fluid {
+		@include mobile {
+			width: auto;
+		}
+	}
+}

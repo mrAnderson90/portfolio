@@ -1,0 +1,29 @@
+@mixin tablet() {
+	@media (max-width: 1250px) {
+		@content;
+	}
+}
+
+@mixin mobile() {
+	@media (max-width: 788px) {
+		@content;
+	}
+}
+
+@mixin mediaBG() {
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		@content;
+	}
+}
+
+@mixin scrollTopMargin() {
+	scroll-margin-top: 60px;
+
+	@include tablet {
+		scroll-margin-top: 40px;
+	}
+
+	@include mobile {
+		scroll-margin-top: 30px;
+	}
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
+
+	<title>Портфолио | Руслан Андреев | HTML верстальщик</title>
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./js/fancybox/fancybox.css">
+
+	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+</head>
+
+<body class="sticky-footer">
+
+	<header class="header" id="top">
+		<div class="container">
+			<div class="header__row">
+
+				<a href="#!" class="header__logo logo">
+					<span class="logo__title">
+						Руслан Андреев
+					</span>
+					<span class="logo_desc">
+						HTML верстальщик, веб-разработчик
+					</span>
+				</a>
+
+				<ul class="socials">
+
+					<li class="socials__item">
+						<a href="mailto:andrus90@mail.ru&subject=вопрос_портфолио?body=обращение_по_верстке" target="_blank">
+							<img src="./img/socials/email.svg" alt="Email">
+						</a>
+					</li>
+
+					<li class="socials__item">
+						<a href="https://github.com/mrAnderson90" target="_blank">
+							<img src="./img/socials/github.svg" alt="GitHub">
+						</a>
+					</li>
+
+					<li class="socials__item">
+						<a href="https://telegram.im/@AndRuslan" target="_blank">
+							<img src="./img/socials/telegram.svg" alt="Telegram">
+						</a>
+					</li>
+
+				</ul>
+
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="container">
+			<div class="main__wrapper">
+
+				<!-- Основная информация -->
+				<section class="main__info info">
+					<!-- Обо мне -->
+					<div class="info__about info-block">
+						<h2 class="info-block__title title">Обо мне</h2>
+						<p>Я профессиональный HTML верстальщик сайтов, веб-разработчик. Верстаю с учетом последних трендов и технологий.</p>
+						<p>Оперативная верстка. Работаю с соблюдением сроков и ТЗ.</p>
+						<p>Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом, напишите мне.</p>
+					</div>
+					<!-- Навыки -->
+					<div class="info__skills info-block info-block--accent">
+						<h2 class="info-block__title title">Навыки</h2>
+						<!-- Бейджи - основные навыки -->
+						<ul class="info-block__badges">
+							<li class="badge badge--html">HTML</li>
+							<li class="badge badge--css">CSS</li>
+							<li class="badge badge--scss">SCSS</li>
+							<li class="badge badge--js">JS</li>
+						</ul>
+						<!-- Список навыков -->
+						<div class="info-block__list">
+							<ul>
+								<li>Pixel perfect, полное соответствие макету</li>
+								<li>Мобильная верстка, оптимизация под retina экраны</li>
+								<li>BEM naming</li>
+								<li>Постановка на WordPress</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<!-- Портфолио -->
+				<section class="main__portfolio portfolio">
+
+					<h2 class="porfolio__title title">Портфолио</h2>
+
+					<ul class="portfolio__cards">
+						<!-- Проект EpicTravel -->
+						<li class="project">
+							<div class="project__img">
+								<img src="./img/projects/epic.jpg" srcset="./img/projects/epic@2x.jpg 2x" alt="EpicTravel">
+							</div>
+							<h3 class="project__title" data-fancybox="gallery" data-src="#modalEpic">
+								<a href="#!">ЭпикТрэвел</a>
+							</h3>
+							<p class="project__desc">Верстка сайта визитки. 4 страницы, форма обратной связи, мобильная адаптация, retina ready</p>
+							<p class="project__tags tags">HTML, CSS, JS</p>
+						</li>
+						<!-- Проект CoWorks -->
+						<li class="project">
+							<div class="project__img">
+								<img src="./img/projects/coworks.jpg" srcset="./img/projects/coworks@2x.jpg 2x" alt="CoWorks">
+							</div>
+							<h3 class="project__title" data-fancybox="gallery" data-src="#modalCoworks">
+								<a href="#!">Сайт коворкинга</a>
+							</h3>
+							<p class="project__desc">Верстка лендинга для сайта коворкинга</p>
+							<p class="project__tags tags">HTML, SCSS, JS</p>
+						</li>
+						<!-- Проект Modimal -->
+						<li class="project">
+							<div class="project__img">
+								<img src="./img/projects/modimal.jpg" alt="Modimal">
+							</div>
+							<h3 class="project__title" data-fancybox="gallery" data-src="#modalModimal">
+								<a href="#!">Modimal</a>
+							</h3>
+							<p class="project__desc">Верстка главной страницы сайта магазина модной одежды</p>
+							<p class="project__tags tags">HTML, SCSS, JS, Gulp</p>
+						</li>
+					</ul>
+
+				</section>
+
+				<!-- Секция обратной связи -->
+				<section class="main__cta cta">
+					<h2 class="cta__title title title--lg">Нужна верстка или есть предложения?</h2>
+					<div class="cta__desc">
+						<p>Напишите мне, обсудим ваш проект</p>
+					</div>
+					<div class="cta__btn">
+						<a href="https://telegram.im/@AndRuslan" class="btn" target="_blank">
+							<img src="./img/icons/telegram.svg" alt="Telegram">
+							Telegram
+						</a>
+					</div>
+				</section>
+
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__content">
+				<p class="footer__copyright">© 2021 - 2024 Руслан Андреев</p>
+				<p class="footer__desc">Сайт сделан в рамках обучения по верстке на курсах от <a href="https://webcademy.ru">WebCademy.ru</a></p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- modalEpic -->
+	<section class="modal" id="modalEpic">
+		<div class="modal__img">
+			<img src="./img/projects/epic-lg.jpg" srcset="./img/projects/epic-lg@2x.jpg 2x" alt="EpicTravel">
+		</div>
+		<!-- Описание проекта -->
+		<div class="modal__content">
+			<h2 class="modal__title">ЭпикТрэвел</h2>
+			<div class="modal__text">
+				<p>Верстка сайта визитки. 3 страницы, форма обратной связи, мобильная адаптация, retina ready.</p>
+				<p>Страницы:</p>
+				<ul>
+					<li>Главная</li>
+					<li>Туры и направления</li>
+					<li>О компании</li>
+					<li>Контакты</li>
+				</ul>
+			</div>
+			<!-- Теги -->
+			<p class="modal__tags tags">HTML, SCSS, JS</p>
+			<!-- Ссылки на проект -->
+			<div class="modal__links">
+				<!-- Ссылка на демо -->
+				<a href="https://mranderson90.github.io/epictravel/" class="btn-link" target="_blank">
+					<img src="./img/icons-project/link.svg" alt="Link">
+					Смотреть демо
+				</a>
+				<!-- Ссылка на GitHub -->
+				<a href="https://github.com/mrAnderson90/epictravel" class="btn-link" target="_blank">
+					<img src="./img/icons-project/github.svg" alt="GitHub">
+					GitHub проекта
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- modalCoworks-->
+	<section class="modal" id="modalCoworks">
+		<div class="modal__img">
+			<img src="./img/projects/coworks-lg.jpg" srcset="./img/projects/coworks-lg@2x.jpg 2x" alt="CoWorks">
+		</div>
+		<!-- Описание проекта -->
+		<div class="modal__content">
+			<h2 class="modal__title">CoWorks</h2>
+			<div class="modal__text">
+				<p>Верстка лендинга для сайта коворкинга</p>
+			</div>
+			<!-- Теги -->
+			<p class="modal__tags tags">HTML, SCSS, JS</p>
+			<!-- Ссылки на проект -->
+			<div class="modal__links">
+				<!-- Ссылка на демо -->
+				<a href="https://mranderson90.github.io/coworks/" class="btn-link" target="_blank">
+					<img src="./img/icons-project/link.svg" alt="Link">
+					Смотреть демо
+				</a>
+				<!-- Ссылка на GitHub -->
+				<a href="https://github.com/mrAnderson90/coworks" class="btn-link" target="_blank">
+					<img src="./img/icons-project/github.svg" alt="GitHub">
+					GitHub проекта
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- modalModimal-->
+	<section class="modal" id="modalModimal">
+		<div class="modal__img">
+			<img src="./img/projects/modimal-lg.jpg" alt="Modimal">
+		</div>
+		<!-- Описание проекта -->
+		<div class="modal__content">
+			<h2 class="modal__title">Modimal</h2>
+			<div class="modal__text">
+				<p>Верстка главной страницы сайта магазина модной одежды</p>
+			</div>
+			<!-- Теги -->
+			<p class="modal__tags tags">HTML, SCSS, JS, Gulp</p>
+			<!-- Ссылки на проект -->
+			<div class="modal__links">
+				<!-- Ссылка на демо -->
+				<a href="https://mranderson90.github.io/modimal/" class="btn-link" target="_blank">
+					<img src="./img/icons-project/link.svg" alt="Link">
+					Смотреть демо
+				</a>
+				<!-- Ссылка на GitHub -->
+				<a href="https://github.com/mrAnderson90/modimal" class="btn-link" target="_blank">
+					<img src="./img/icons-project/github.svg" alt="GitHub">
+					GitHub проекта
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Кнопка прокрутки наверх -->
+	<a href="#top" class="top-link" id="scrollToTopBtn">
+		<img src="./img/icons/arrow-up.svg" alt="Arrow up">
+	</a>
+
+	<!-- Vendors -->
+	<script src="./js/fancybox/fancybox.umd.js"></script>
+
+	<!-- Скрипты -->
+	<script src="./js/scrollToTop.js"></script>
+	<script src="./js/main.js"></script>
+
+</body>
+</html>

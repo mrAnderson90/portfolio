@@ -1,0 +1,17 @@
+.info {
+	display: flex;
+	gap: 20px 30px;
+
+	@include mobile {
+		flex-direction: column;
+
+	}
+}
+
+.info__about {
+	flex: 1;
+}
+
+.info__skills {
+	flex: 1;
+}

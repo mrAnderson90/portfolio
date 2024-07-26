@@ -1,0 +1,21 @@
+.main {
+	margin-bottom: 80px;
+
+	@include tablet {
+		margin-bottom: 60px;
+	}
+
+	@include mobile {
+		margin-bottom: 40px;
+	}
+}
+
+.main__wrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: 50px;
+
+	@include mobile {
+		row-gap: 40px;
+	}
+}

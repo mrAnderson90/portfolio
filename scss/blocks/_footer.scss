@@ -1,0 +1,32 @@
+.footer {
+	padding: 20px 0;
+	background-color: #131313;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 14px;
+
+	@include mobile {
+		padding: 10px 0;
+		font-size: 12px;
+	}
+
+	a {
+		color: rgba(255, 255, 255, 0.75);
+	}
+}
+
+.footer__content {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+
+	@include mobile {
+		flex-direction: column;
+		row-gap: 10px;
+	}
+}
+
+.footer__copyright {
+}
+
+.footer__desc {
+}

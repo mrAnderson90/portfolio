@@ -1,0 +1,43 @@
+.none {
+	display: none !important;
+}
+
+.visible-desktop {
+	@include tablet {
+		display: none;
+	}
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.no-scroll {
+	overflow-y: hidden;
+}
+
+.mb-1 {
+	margin-bottom: 1em;
+}
+
+.mb-2 {
+	margin-bottom: 2em;
+}
+
+.mb-3 {
+	margin-bottom: 3em;
+}
+
+.mb-4 {
+	margin-bottom: 4em;
+}
+
+.mb-5 {
+	margin-bottom: 5em;
+}

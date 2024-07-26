@@ -1,0 +1,38 @@
+.logo, a.logo, a.logo:link {
+	font-size: 28px;
+	font-weight: 700;
+	text-decoration: none;
+	
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+
+	max-width: 100%;
+}
+
+.logo__title {
+	margin-bottom: 5px;
+
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 1;
+	color: #000;
+
+	@include mobile {
+		font-size: 24px;
+	}
+}
+
+.logo_desc {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.6;
+	color: #6b9db9;
+}

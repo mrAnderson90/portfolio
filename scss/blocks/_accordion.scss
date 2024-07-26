@@ -1,0 +1,42 @@
+.accordion {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.accordion__item.active .accordion__btn {
+	background-color: #d3f4e0;
+}
+
+.accordion__btn {
+	width: 100%;
+	text-align: left;
+
+	padding: 20px;
+	background-color: #e7e7e7;
+	border-radius: 8px;
+	font-size: 18px;
+	font-weight: 600;
+
+	/* Focus reset */
+	&:focus {
+		outline: none;
+	}
+
+	/* Focus only */
+	&:focus-visible {
+		outline-offset: 1px;
+		outline: #005fcc auto 1px;
+	}
+}
+
+.accordion__content {
+	/* Important for Accordion */
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.2s ease-in;
+}
+
+.accordion__body {
+	padding: 20px;
+}

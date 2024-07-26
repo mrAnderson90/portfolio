@@ -1,0 +1,16 @@
+.portfolio {
+}
+
+.porfolio__title {
+	margin-bottom: 30px;
+
+	@include mobile {
+		margin-bottom: 20px;
+	}
+}
+
+.portfolio__cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+	gap: 30px;
+}
