@@ -342,6 +342,7 @@ body {
 }
 
 .socials__item a {
+  display: block;
   transition: all 0.2s ease-in;
 }
 .socials__item a:hover {
@@ -482,6 +483,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s ease-in;
 }
 .project__img img {
   margin-top: -7px;
@@ -489,6 +491,11 @@ body {
   height: 138px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.project:hover .project__img {
+  background-color: #e7dfdf;
+  box-shadow: 0px 0px 8px 0px rgba(189, 120, 120, 0.5);
 }
 
 .project__title {
@@ -511,12 +518,6 @@ body {
   height: 100%;
   background-color: rgba(86, 86, 86, 0);
   transition: all 0.2s ease-in;
-}
-.project__title a:hover {
-  color: #039be5;
-}
-.project__title a:hover:after {
-  box-shadow: 5px 5px 5px 0px rgba(34, 60, 80, 0.2);
 }
 
 .project__desc {
