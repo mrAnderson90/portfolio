@@ -19,12 +19,19 @@
 	justify-content: center;
 	align-items: center;
 
+	transition: all 0.2s ease-in;
+
 	img {
 		margin-top: -7px;
 		width: 216px;
 		height: 138px;
 		object-fit: cover;
 	}
+}
+
+.project:hover .project__img {
+	background-color: #e7dfdf;
+	box-shadow: 0px 0px 8px 0px rgba(189, 120, 120, 0.5);
 }
 
 .project__title {
@@ -49,14 +56,6 @@
 			background-color:rgba(86, 86, 86, 0);
 
 			transition: all 0.2s ease-in;
-		}
-
-		&:hover {
-			color: #039be5;
-
-			&:after {
-				box-shadow: 5px 5px 5px 0px rgba(34, 60, 80, 0.2);
-			}
 		}
 	}
 }
